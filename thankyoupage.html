@@ -16,25 +16,30 @@
           <a href= "home.html"style= "box-shadow: inset 0 3px 20px grey;"> Home</a>
           <a href= "services.html"style= "box-shadow: inset 0 3px 20px grey;"> Services</a>
           <a href= "about.html"style= "box-shadow: inset 0 3px 20px grey;"> About Me</a>
-          <a href="contact.html"style= "box-shadow: inset 0 3px 20px grey;">Contact Me</a>
           <a href= "testimonials.html"style= "box-shadow: inset 0 3px 20px grey;"> Testimonials</a>
+          <a href="stp.html"style= "box-shadow: inset 0 3px 20px grey;">Podcast</a>
         </div>
 
 <div id="body">
-          <img src="stp.jpg" class='stppic'>
 
           <div class="infome">
-          <h3 style="color:white;font-family:fantasy;">The Soul Tribe Podcast<br><br>My sister Lorena and I wanted to create a place where we can discuss our passion, the Akashic Records, spiritual awakenings and life in general. Our mission is to create an open environment to talk about all things greater then ourselves. <br>With this podcast we hope to learn, grow and help others do the same. Just two sisters talking about life and spirituality, what is to come only the Akasha knows =)<br><br> *Click on logo below to access The Soul Tribe Podcast website.</h3>
+            <div class=content>
+  <div class="wrapper-1">
+    <div class="wrapper-2">
+      <h1>Thanks for contacting me!</h1>
+      <p>I will get back to you as soon as possible.</p>
+    </div>
+</div>
+</div>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro" rel="stylesheet">
+
         </div>
 
       </div>
     </body>
-
-    <footer>
-    <div id= "footer">
-       <a href="http://www.thesoultribepodcast.com"><img src="stp.jpg" width="150" height="150" alt="The Soul Tribe Podcast logo" /></a>
-    </div>
-  </footer>
 
 
 <style>
@@ -58,7 +63,6 @@
    margin:0;
    padding:0;
    height:100%;
-   background-color: #000000;
 
 }
 
@@ -76,25 +80,6 @@
     width: 180px;
     border-radius: 50%;
     opacity: .7;
-  }
-
-  IMG.stppic {
-    width: 40%;
-    height: 40%;
-    opacity: .9;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-  }
-
-  .pc {
-   position: relative;
-   display:flex;
-   justify-content: space-around;
-   border:3px solid white;
-   padding:40px;
-   margin-bottom: 20px;
   }
 
   .infome{
@@ -118,6 +103,58 @@
     margin-bottom: 30px;
   }
 
+  *{
+  box-sizing:border-box;
+ /* outline:1px solid ;*/
+}
+body{
+background: white;
+    height: 100%;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+}
+
+.wrapper-1{
+  width:100%;
+  height:100vh;
+  display: flex;
+flex-direction: column;
+}
+.wrapper-2{
+  padding :30px;
+  text-align:center;
+}
+h1{
+  font-family: 'fantasy', cursive;
+  font-size:4em;
+  letter-spacing:3px;
+  color:black ;
+  margin:0;
+  margin-bottom:20px;
+}
+.wrapper-2 p{
+  margin:0;
+  font-size:1.3em;
+  color:#aaa;
+  font-family: 'fantasy', cursive;
+  letter-spacing:1px;
+}
+
+@media (min-width:600px){
+  .content{
+  max-width:1000px;
+  margin:0 auto;
+}
+  .wrapper-1{
+  height: initial;
+  max-width:620px;
+  margin:0 auto;
+  margin-top:50px;
+  box-shadow: inset 0 20px 50px blue;
+}
+
   a {
     color: #000000;
     background: #ffffff;
@@ -137,15 +174,7 @@
   a:visited {
     color: #000000;
   }
-
-  #footer {
-  bottom: 0;
-  width: 100%;
-  height: 170px;
-  background-color: #ffffff;
-  border-radius: 0%;
-  display: flex;
-  justify-content: space-around;
-  }
 </style>
 </html>
+
+
