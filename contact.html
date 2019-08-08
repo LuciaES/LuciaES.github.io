@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+  <div id= "container">
+
+    <body>
+
+      <header>
+        <h1 style="color:#ffffff; font: 900 60px Montserrat;">L u c i a</h1>
+      </header>
+
+        <div class= "links">
+          <a href= "about.html"style= "box-shadow: inset 0 3px 20px grey;"> About Me</a>
+          <a href= "services.html" style= "box-shadow: inset 0 3px 20px grey;" > Services</a>
+          <a href="mailto:lucia.akashicrecords@gmail.com"style= "box-shadow: inset 0 3px 20px grey;">Email Me</a>
+          <a href= "testimonials.html"style= "box-shadow: inset 0 3px 20px grey;"> Testimonials</a>
+          <a href="stp.html"style= "box-shadow: inset 0 3px 20px grey;">Podcast</a>
+        </div>
+
+<div id="body">
+
+<div class= "infome">
+  <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);">
+    <table  class= "box" style="width:550px;border:0;" cellpadding="8" cellspacing="0">
+      <tr> <td>
+      <label for="Name">Name*:</label>
+      </td> <td>
+      <input name="Name" type="text" maxlength="60" style="width:250px;" />
+      </td> </tr> <tr> <td>
+      <label for="FromEmailAddress">Email address*:</label>
+      </td> <td>
+      <input name="FromEmailAddress" type="text" maxlength="90" style="width:250px;" />
+      </td> </tr> <tr> <td>
+      <label for="Comments">Comments*:</label>
+      </td> <td>
+      <textarea name="Comments" rows="7" cols="40" style="width:250px;"></textarea>
+      </td> </tr> <tr> <td>
+      * - required fields
+      </td> <td>
+      <div style="float:right;"><a href="https://www.100forms.com" id="lnk100" title="form to email">form</a></div>
+      <input name="skip_Submit" type="submit" value="Submit" />
+      <script src="https://www.100forms.com/js/FORMKEY:HWC8ZXREKDEE/SEND:lucia.akashicrecords@gmail.com" type="text/javascript"></script>
+      </td> </tr>
+    </table>
+  </form>
+
+</body>
+</div>
+
+      <footer>
+    <div id= "footer">
+       <a href="http://www.thesoultribepodcast.com"><img src="stp.jpg" width="150" height="150" alt="The Soul Tribe Podcast logo" /></a>
+    </div>
+  </footer>
+
+<style>
+  header {
+    padding: 10px;
+    font-color: #000000;
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0%;
+    background: url('astro.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    font-weight: bolder;
+    height: 180px;
+    width: 100%;
+  }
+
+  a {
+    color: #D9c1bb;
+    padding-top: 30px;
+    padding-bottom: 150px;
+    text-align: center;
+  }
+
+
+  a:hover {
+    margin-top: -3px;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+  }
+
+  a:visited {
+    color: #D9c1bb;
+  }
+  body {
+   height:100%;
+   display: flex;
+   flex-direction: column;
+   background-color: #000000;
+
+}
+
+  #body{
+    margin: 10%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .infome {
+   position: relative;
+   display:flex;
+   justify-content: space-around;
+   border:3px solid white;
+   padding:40px;
+   margin-bottom: 30px;
+   text-align:center;
+  }
+
+  .box {
+    background-color: #D9c1bb;
+    display: flex;
+    position: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 50%;
+    max-width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 1.2em;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    opacity: .83;
+  }
+
+#container {
+    height: 100%;
+  }
+
+  .links {
+    display: flex;
+    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    font-family: fantasy;
+    margin-top: 30px;
+  }
+
+  a {
+    color: #000000;
+    background: #ffffff;
+    display: block;
+    padding: 10px 10px;
+    margin-right: 15px;
+    text-align: center;
+    text-decoration: none;
+    width: 170px;
+    border-radius: 30%;
+  }
+
+  a:hover {
+    opacity: .2;
+  }
+
+  a:visited {
+    color: #000000;
+  }
+
+  #footer {
+  bottom: 0;
+  width: 100%;
+  height: 170px;
+  background-color: #ffffff;
+  border-radius: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  }
+
+</style>
+
+<script type="text/javascript">
+  function ValidateForm(frm) {
+    if (frm.Name.value == "") { alert('Name is required.'); frm.Name.focus(); return false; }
+      if (frm.FromEmailAddress.value == "") { alert('Email address is required.'); frm.FromEmailAddress.focus(); return false; }
+        if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) { alert('Please enter a valid email address.'); frm.FromEmailAddress.focus(); return false; }
+          if (frm.Comments.value == "") { alert('Please enter comments or questions.'); frm.Comments.focus(); return false; }
+            return true; }
+</script>
+</html>
