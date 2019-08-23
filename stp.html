@@ -5,7 +5,7 @@
     <title></title>
     </head>
 
-
+<div id= "container">
     <body>
       <header>
         <h1 style="color:#ffffff; font: 900 60px Montserrat;">L u c i a</h1>
@@ -20,15 +20,16 @@
           <a href= "testimonials.html"style= "box-shadow: inset 0 3px 20px grey;"> Testimonials</a>
         </div>
 
-<div id="body">
-          <img src="stp.jpg" class='stppic'>
+<div class="body">
+          <a href="http://www.thesoultribepodcast.com"><img src="stp.jpg" id='stppic'/></a></div>
 
           <div class="infome">
-          <h3 style="color:white;font-family:fantasy;">The Soul Tribe Podcast<br><br>My sister Lorena and I wanted to create a place where we can discuss our passion, the Akashic Records, spiritual awakenings and life in general. Our mission is to create an open environment to talk about all things greater then ourselves. <br>With this podcast we hope to learn, grow and help others do the same. Just two sisters talking about life and spirituality, what is to come only the Akasha knows =)<br><br> *Click on logo below to access The Soul Tribe Podcast website.</h3>
+          <h3 style="color:white;font-family:fantasy;">The Soul Tribe Podcast<br><br>My sister Lorena and have create a place where we can discuss our passion, the Akashic Records, spiritual awakenings and life in general. Our grand mission is to create a community with others where everyone can discover, grow and learn. <br> Just two sisters talking about life and spirituality, what is to come only the Akasha knows =)<br><br> *Click on logo above or below to access The Soul Tribe Podcast website.</h3>
         </div>
 
-      </div>
+
     </body>
+  </div>
 
     <footer>
     <div id= "footer">
@@ -62,10 +63,20 @@
 
 }
 
-  #body{
-    margin: 10%;
+  .body{
+    /*margin: 10%;
     margin-top: 30px;
     margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;*/
+
+
+   display:flex;
+   justify-content: space-around;
+   padding:40px;
+   margin-bottom: 30px;
+   text-align:center;
+   background-color: #ffffff;
   }
 
   #container {
@@ -78,24 +89,29 @@
     opacity: .7;
   }
 
-  IMG.stppic {
-    width: 40%;
-    height: 40%;
-    opacity: .9;
-    margin: 20px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-  }
+ /* #stppic {
+    display: inline-flex;
+    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+  }*/
 
-  .pc {
+  IMG#stppic{
+    width: 250px;
+    height: 250px;
+    position: relative;
+   display:inline-flex;
+  align-content: center;
+ }
+
+  /*.pc {
    position: relative;
    display:flex;
    justify-content: space-around;
    border:3px solid white;
    padding:40px;
    margin-bottom: 20px;
-  }
+  }*/
 
   .infome{
    position: relative;
@@ -146,6 +162,9 @@
   border-radius: 0%;
   display: flex;
   justify-content: space-around;
+  position: relative;
+  bottom: 0;
+
   }
 </style>
 </html>
