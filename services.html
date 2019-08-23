@@ -86,7 +86,11 @@
   }
 
   #container {
-    height: 100%;
+    min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 170px; /* height of your footer */
   }
 
   .infome {
@@ -115,6 +119,8 @@
   border-radius: 0%;
   display: flex;
   justify-content: space-around;
+  bottom: 0;
+  position: absolute;
 
   }
 
