@@ -21,7 +21,8 @@
         </div>
 
 <div class="body">
-          <a href="http://www.thesoultribepodcast.com"><img src="stp.jpg" id='stppic'/></a></div>
+          <a href="http://www.thesoultribepodcast.com"><img src="stp.jpg" id="stppic" alt="The Soul Tribe Podcast logo" /></a>
+        </div>
 
           <div class="infome">
           <h3 style="color:white;font-family:fantasy;">The Soul Tribe Podcast<br><br>My sister Lorena and have create a place where we can discuss our passion, the Akashic Records, spiritual awakenings and life in general. Our grand mission is to create a community with others where everyone can discover, grow and learn. <br> Just two sisters talking about life and spirituality, what is to come only the Akasha knows =)<br><br> *Click on logo above or below to access The Soul Tribe Podcast website.</h3>
@@ -80,7 +81,12 @@
   }
 
   #container {
-    height: 100%;
+    min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 170px; /* height of your footer */
+  }
   }
   .logo {
     height: 180px;
