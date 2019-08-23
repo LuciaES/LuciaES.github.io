@@ -87,6 +87,7 @@ return true; }
    padding:0;
    height:100%;
    background-color: #000000;
+   position: relative;
 
 }
 
@@ -98,6 +99,11 @@ return true; }
 
   #container {
     height: 100%;
+    min-height: 100vh; /* will cover the 100% of viewport */
+ overflow: hidden;
+ display: block;
+ position: relative;
+ padding-bottom: 170px; /* height of your footer */
   }
 
   .infome{
