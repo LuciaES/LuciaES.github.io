@@ -16,17 +16,17 @@
   <header>
   <div class="wrap">
   <ul>
-    <a href="#services"><li>services</li></a>
+    <a href="#home"><li>home</li></a>
     <a href="#podcast"><li>podcast</li></a>
-    <a href="testimonials.html"><li>testimonials</li></a>
     <a href="#about"><li>about</li></a>
-    <a href="contact.html"><li>book/contact</li></a>
+    <a href="contact.html"><li>contact</li></a>
+    <a href="testimonials.html"><li>testimonials</li></a>
   </ul>
   </div>
 </header>
 
 <div class="wrap">
-  <section id="services">
+  <section id="home">
     <img src="l.png"style="width:350px;height: 350px;border-radius: 50%; border-style:solid; border-color:white;">
     <h1>Services</h1>
     <img src="t.png">
@@ -90,7 +90,7 @@
       <img src="q6.jpg" style="width:250px;height: 250px;" alt="img05"/>
       <img src="q5.jpg" style="width:250px;height: 250px;" alt="img06"/>
     </div><br>
-    <a href="http://www.thesoultribepodcast.com" style="background-color: #bbd9d3; text-decoration-style: bold;">Go to -->The Soul Tribe Podcast Website <--</a>
+    <a class="pclink" href="http://www.thesoultribepodcast.com">Go to -->The Soul Tribe Podcast Website <--</a>
    </section>
 </div>
 
@@ -180,12 +180,13 @@ p{
 }
 
 header{
-    background-color:#bbd9d3;
-    height:60px;
-    position:fixed;
-    width:100%;
+  background-color:#bbd9d3;
+  height:80px;
+  padding-top:10px;
+  width:100%;
   overflow:hidden;
-
+  font-size:25px;
+  float: right;
 }
 
 header .logo{
@@ -387,13 +388,25 @@ transition: all 500ms ease;
 #about ul li:hover{
   color:#94c2cf;
   cursor:pointer;
-
   -webkit-transition: all 500ms ease;
 -moz-transition: all 500ms ease;
 -ms-transition: all 500ms ease;
 -o-transition: all 500ms ease;
 transition: all 500ms ease;
 }
+
+.images a:link{
+  text-decoration:none;
+  text-decoration-color: #000000 !important;
+  text-decoration-line: none;
+}
+
+.images a:visited{
+  text-decoration:none;
+  text-decoration-color: #00000 !important;
+  text-decoration-line: none;
+}
+
 
 
 #footer{

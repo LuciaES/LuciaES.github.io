@@ -16,22 +16,22 @@
   <header>
   <div class="wrap">
   <ul>
-    <a href="index.html#services"><li>services</li></a>
+    <a href="index.html#home"><li>home</li></a>
     <a href="index.html#podcast"><li>podcast</li></a>
-    <a href="testimonials.html"><li>testimonials</li></a>
     <a href="index.html#about"><li>about</li></a>
-    <a href="contact.html"><li>book/contact</li></a>
+    <a href="contact.html"><li>contact</li></a>
+    <a href="testimonials.html"><li>testimonials</li></a>
   </ul>
   </div>
 </header>
 
 <div class="wrap">
   <section id="services">
-    <img src="l.png"style="width:350px;height: 350px;border-radius: 50%; border-style:solid; border-color:white;">
+    <img src="l.png"style="width:350px;height: 350px;border-radius: 50%; border-style:solid; border-color:white;margin-bottom: 20px;">
     <h1>Contact</h1>
 
 
-<div id= "container">
+<div id= "container" style="margin-bottom: 20px;">
         <div id="body">
           <div class="infome">
             <form action="//submit.form" id="ContactUs100" method="post" onsubmit="return ValidateForm(this);" style="background-color: white; font-weight: bolder;font-family: fantasy;">
@@ -46,7 +46,7 @@
   return true; }
 
 </script>
-  <table class= "box" style="width:250px;box-shadow: inset 0 3px 20px #bbd9d3;" cellpadding="8" cellspacing="0">
+  <table class= "box" style="box-shadow: inset 0 3px 20px #bbd9d3;" cellpadding="8" cellspacing="0">
   <tr> <td>
     <label for="Name">Name*:</label>
   </td> <td>
@@ -162,12 +162,13 @@ p{
 }
 
 header{
-    background-color:#bbd9d3;
-    height:60px;
-    position:fixed;
-    width:100%;
+  background-color:#bbd9d3;
+  height:80px;
+  padding-top:10px;
+  width:100%;
   overflow:hidden;
-
+  font-size:25px;
+  float: right;
 }
 
 header .logo{
@@ -344,6 +345,11 @@ transition: all 500ms ease;
   width: 200px;
   height: 200px;
   border-radius: 50%;
+}
+
+.box{
+  margin-bottom: 300px;
+  width:500px;height:500px;
 }
 
 #about ul{
